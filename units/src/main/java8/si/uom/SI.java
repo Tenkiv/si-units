@@ -88,12 +88,6 @@ public final class SI extends Units {
 //            quantityToUnit = new HashMap<Class<? extends Quantity>, AbstractUnit>();
 
     /**
-     * Default constructor (prevents this class from being instantiated).
-     */
-    private SI() {
-    }
-
-    /**
      * Returns the singleton instance of this class.
      *
      * @return the metric system instance.
@@ -287,6 +281,12 @@ public final class SI extends Units {
     /////////////////////
     // Collection View //
     /////////////////////
+
+    /**
+     * Default constructor (prevents this class from being instantiated).
+     */
+    private SI() {
+    }
 
     @Override
     public String getName() {
