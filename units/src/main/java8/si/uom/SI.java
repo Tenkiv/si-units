@@ -86,15 +86,6 @@ public final class SI extends Units {
      */
 //    private final HashMap<Class<? extends Quantity>, AbstractUnit>
 //            quantityToUnit = new HashMap<Class<? extends Quantity>, AbstractUnit>();
-
-    /**
-     * Returns the singleton instance of this class.
-     *
-     * @return the metric system instance.
-     */
-    public static SI getInstance() {
-        return INSTANCE;
-    }
  
     ////////////////////////////////
     // SI DERIVED ALTERNATE UNITS //
@@ -286,6 +277,15 @@ public final class SI extends Units {
      * Default constructor (prevents this class from being instantiated).
      */
     private SI() {
+    }
+
+    /**
+     * Returns the singleton instance of this class.
+     *
+     * @return the metric system instance.
+     */
+    public static SI getInstance() {
+        return INSTANCE;
     }
 
     @Override

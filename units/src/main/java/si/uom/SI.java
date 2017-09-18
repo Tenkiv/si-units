@@ -45,10 +45,7 @@ import tec.units.ri.format.SimpleUnitFormat;
 import tec.units.ri.function.MultiplyConverter;
 import tec.units.ri.function.PiMultiplierConverter;
 import tec.units.ri.function.RationalConverter;
-import tec.units.ri.unit.AlternateUnit;
-import tec.units.ri.unit.ProductUnit;
-import tec.units.ri.unit.TransformedUnit;
-import tec.units.ri.unit.Units;
+import tec.units.ri.unit.*;
 
 /**
  * <p>
@@ -77,15 +74,6 @@ public final class SI extends Units {
      * The singleton instance.
      */
     private static final SI INSTANCE = new SI();
-
-    /**
-     * Returns the singleton instance of this class.
-     *
-     * @return the metric system instance.
-     */
-    public static SI getInstance() {
-	return INSTANCE;
-    }
 
     ////////////////////////////////
     // SI DERIVED ALTERNATE UNITS //
@@ -335,6 +323,15 @@ public final class SI extends Units {
      * Default constructor (prevents this class from being instantiated).
      */
     private SI() {
+    }
+
+    /**
+     * Returns the singleton instance of this class.
+     *
+     * @return the metric system instance.
+     */
+    public static SI getInstance() {
+        return INSTANCE;
     }
 
     @Override
